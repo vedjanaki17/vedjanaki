@@ -35,7 +35,7 @@ nav a {
     
 }
 .image-container img:hover {
-    filter: grayscale(100%);  Apply grayscale filter on hover */
+    filter: grayscale(100%);  
     transition: filter 0.3s ease; /* Add a smooth transition effect */
 }
 
@@ -149,8 +149,7 @@ footer {
     
     display: flex; /* Make the footer a flex container */
     justify-content: center; /* Justify the children to the center */
-    
-   
+    margin: 100px;
 }
   
   footer a {
