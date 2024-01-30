@@ -1,0 +1,207 @@
+/* styles.css */
+
+/* back ground color */
+body {
+    margin: 0;
+    background-color: #2D3250;
+}
+
+nav{
+    background-color: #F6B17A; 
+    padding: 10px; 
+    
+    display: flex; 
+    justify-content: flex-end; 
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff; 
+    padding: 8px 12px; 
+    border-radius: 4px; 
+    background-color: #424769; 
+    transition: background-color 0.3s ease;
+  }
+  
+  nav a:hover {
+    background-color: #555; 
+  }
+
+  .image-container {
+    display: flex; /* Use flexbox */
+    justify-content: space-between; /* Distribute space between items */
+    margin-left: 100px;
+    margin-right: 100px;
+    
+}
+.image-container img:hover {
+    filter: grayscale(100%);  Apply grayscale filter on hover */
+    transition: filter 0.3s ease; /* Add a smooth transition effect */
+}
+
+/* Make all images the same size */
+.image-container img {
+    width: 250px; 
+    height: auto; 
+    object-fit: cover;
+    border-radius: 10px; /* Set border-radius for rounded corners */
+
+}
+
+/* Ved Janaki text */
+h1 { 
+    color: #F6B17A;
+    border: solid 3px;
+    border-radius: 5px;
+    display: inline-block;
+    padding: 20px;
+    font-size: 70px;
+    font-family: Oswald, sans-serif;
+    text-align: center;
+    margin-left: 580px;
+
+}
+
+.about-me p {
+    color: white; /* Set text color to white */
+    text-align: center; /* Center-align text */
+}
+
+h2 {
+font-family: Work Sans, sans-serif;
+color: white;
+font-size: 25px;
+text-align: center;
+}
+
+@keyframes slideIn {
+    from {
+        width: 0;
+    }
+    
+}
+
+/* sets the horizontal line design */
+hr {
+    border: 2px solid #F6B17A; 
+    border-radius: 5px; 
+    height: 6px;
+    animation: slideIn 3s ease-out; /* Apply the animation to the horizontal rule */
+    width: 1300px;
+}
+
+
+.about-me {
+    background-color: #7077A1;
+    padding: 10px;
+    margin-bottom: 20px;
+
+}
+
+.information img {
+    width: 250px; /* Adjust the width as needed */
+    height: auto; /* Maintain aspect ratio */
+    object-fit: cover;
+    border-radius: 10px; 
+   
+}
+
+
+.three-col{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Three equal columns */
+    gap: 20px; /* Space between each child */
+    margin-left: 90px;
+}
+
+
+.information h2 {
+    color: #F6B17A;
+}
+.information {
+    width: 300px; 
+    padding: 20px; 
+    margin: 10px; 
+    border-radius: 10px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add a subtle shadow effect */
+    background-color: #7077A1; 
+    
+    
+}
+
+.information .card dl {
+    display: flex;
+    flex-wrap: wrap; /* Allow wrapping to handle small screens */
+    padding: 0; /* Remove default padding for list */
+    list-style: none; /* Remove list bullets */
+}
+
+
+.information:hover {
+    transform: scale(1.05); /* Increase scale on hover */
+    transition: transform 0.3s ease; /* Add a smooth transition effect */
+}
+
+
+footer {
+    background-color: #F6B17A; /* Set a background color for the footer */
+    padding: 10px; 
+    
+    display: flex; /* Make the footer a flex container */
+    justify-content: center; /* Justify the children to the center */
+    
+   
+}
+  
+  footer a {
+    text-decoration: none; /* Remove default underline */
+    color: #fff; /* Set the default text color */
+    padding: 8px 12px; /* Add padding for better clickability and appearance */
+    border-radius: 4px; /* Add border-radius for a rounded appearance */
+    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+    background-color: #424769; /* Set background color */
+   
+  }
+  
+  footer a:hover {
+    background-color: #555; /* Change background color on hover */
+  }
+
+  .card {
+    width: 100%;
+    max-width: 400px; /* Adjust the maximum width as needed */
+    margin: 0 auto; /* Center the card */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    background-color: #F6B17A;
+}
+
+
+.one-col form {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Styling for form input elements */
+.one-col label {
+    margin-bottom: 8px;
+}
+
+.one-col input,
+.one-col textarea {
+    padding: 10px;
+    margin-bottom: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.one-col input[type="submit"] {
+    background-color: #333;
+    color: #fff;
+    cursor: pointer;
+}
+
+.one-col input[type="submit"]:hover {
+    background-color: #555;
+}
